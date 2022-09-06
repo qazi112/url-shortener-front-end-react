@@ -3,7 +3,7 @@ import axios from "axios";
 const userLogin = (username, password) => {
   return new Promise((resolve, reject) => {
     axios
-      .post("http://myaddress:4000/api/auth/login", {
+      .post("http://0.0.0.0:4000/api/auth/login", {
         username: username,
         password: password,
       })
@@ -19,7 +19,7 @@ const userLogin = (username, password) => {
 const userRegister = (username, password) => {
   return new Promise((resolve, reject) => {
     axios
-      .post("http://myaddress:4000/api/auth/register", {
+      .post("http://0.0.0.0:4000/api/auth/register", {
         username: username,
         password: password,
       })

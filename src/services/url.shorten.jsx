@@ -6,7 +6,7 @@ const urlShorten = (longUrl, user) => {
   return new Promise(async (resolve, reject) => {
     try {
       const response = axios.post(
-        "http://myaddress:4000/api/shorten",
+        "http://0.0.0.0:4000/api/shorten",
         { longUrl: longUrl },
         { headers }
       );
